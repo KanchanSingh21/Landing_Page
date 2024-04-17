@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <!-- custom css link -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- boxicons link -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- remixicons link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=permanent+Marker&
+    family=Poppins:wght@300;400;500;600;700;800;900&display=swap">
+
+</head>
+
+
+<body>
+
+    <header>
+        <!-- <a href="#" class="logo">SheHealth</a> -->
+        <div class="logo">
+            <!-- <img src="logo.png" alt="" class="logo-img"> -->
+        </div>
+
+        <ul class="navlist">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Health</a></li>
+            <li><a href="#">Learning</a></li>
+            <li><a href="#">contact-us</a></li>
+            <li><a href="#">About-us</a></li>
+            <li><a id="box" href="Registration form.html">Signup</a></li>
+            <li><a id="box1" href="projectLoginPage.html">Login</a></li>
+        </ul>
+
+        <div class="bx bx-menu" id="menu-icon"> </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Website name</h1>
+            <p>Connect with the world's</p>
+            <!-- <div>
+<input type="text" placeholder="Seach our query" id="search">
+</div> -->
+            <ul>
+                <li><input type="text" placeholder="Search.in" class="input"></li><br>
+                <li><a href="#">let's start</a></li>
+
+            </ul>
+            <!-- <a href="#">Compare</a>
+<a href="#" class="ctaa"><i class="ri-play-fill"></i>Watch Vedio</a> -->
+        </div>
+
+        <div class="hero-img">
+            <img src="https://pxbar.com/wp-content/uploads/2023/09/girls-cartoon-pic.jpg" alt=""
+                style="border-radius:50%;">
+        </div>
+    </section>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>HEALTH</h1>
+            <p>Sanitation and hygiene are two major factors that affect our health. <br>
+                Good health is not only freedom from sickness and diseases but a complete absence of anxiety, social and
+                psychological tensions.
+            </p>
+        </div>
+        <div class="hero-img">
+            <img src="https://i.pinimg.com/736x/58/0e/15/580e15b0360ff6c146fd97501e16d784.jpg" alt=""
+                style="border-radius:50%;">
+        </div>
+    </section>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Learning</h1>
+            <p>Sanitation and hygiene are two major factors that affect our health. <br>
+                Good health is not only freedom from sickness and diseases but a complete absence of anxiety, social and
+                psychological tensions.
+            </p>
+        </div>
+        <div class="hero-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGKiS8RkZoMQ0SuR5DkYb0of97uicaTVksw0kMMhvFbWz9DNUheHSUY0SzwkmZyVQTI6w&usqp=CAU"
+                alt="" style="border-radius:50%;">
+        </div>
+
+    </section>
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Contact-us</h1>
+            <p>Sanitation and hygiene are two major factors that affect our health. <br>
+                Good health is not only freedom from sickness and diseases but a complete absence of anxiety, social and
+                psychological tensions.
+            </p>
+        </div>
+        <div class="hero-img">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkABIoWcORY8DQ6OX3VLhJsNJeOiJH5CPqUW-fwAbo3WiUE-EkKrDECYFt7x9MwHPXZDo&usqp=CAU"
+                alt="" style="border-radius:50%;">
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>Author: abc<br>
+            <a href="#">abc@example.com</a>
+        </p>
+    </footer>
+
+    <!-- scrollreveal effect -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom js link -->
+    <script>
+
+        let menu = document.querySelector('#menu-icon');
+        let navlist = document.querySelector('.navlist');
+
+        menu.onclick = () => {
+            menu.classList.toggle('bx-x');
+            navlist.classList.toggle('open');
+        };
+
+        const sr = ScrollReveal({
+            distance: '65px',
+            duration: 2600,
+            dealy: 450,
+            reset: true
+        });
+
+        sr.reveal('.hero-text', { delay: 200, origin: 'top' });
+        sr.reveal('.hero-img', { delay: 450, origin: 'top' });
+    </script>
+
+</body>
+
+</html>
